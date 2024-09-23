@@ -27,7 +27,7 @@ def main(params):
         csv_name = 'output.csv'
 
     os.system(f"wget {url} -O {csv_name}")
-
+    # download the csv
     engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
 
     df_iter = pd.read_csv(csv_name, iterator=True, chunksize=100000)
