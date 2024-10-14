@@ -1,6 +1,6 @@
 variable "credentials" {
   description = "My Credentials"
-  default     = "/home/yue/.gc/first-project-430509-d6a668282bfc.json"
+  default     = "/home/yw/.gc/groovy-shore-437910-r8-10beec484440.json"
   #ex: if you have a directory where this file is called keys with your service account json file
   #saved there as my-creds.json you could use default = "./keys/my-creds.json"
 }
@@ -8,7 +8,7 @@ variable "credentials" {
 
 variable "project" {
   description = "GCP Project ID"
-  default     = "first-project-430509"
+  default     = "groovy-shore-437910-r8"
   type = string
 }
 
